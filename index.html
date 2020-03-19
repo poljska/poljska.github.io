@@ -108,6 +108,34 @@
         </div>
     </div>
     <hr>
+    <div class="title">
+        <h3>Interactive forms</h3>
+    </div>
+    <div class="content">
+        <div>
+            <p class="shoppingText">
+                <label for="item">I want to buy a </label>
+                <input type="text" id="item" placeholder="banana">
+                <button type="button" onclick="addItem()">Buy!</button>
+            </p>
+            <p class="option">
+                <input type="checkbox" id="important">
+                <label for="important">Item is important</label>
+            </p>
+            <p class="option">
+                <input type="checkbox" id="groceries">
+                <label for="groceries">Item can be bought in groceries</label>
+            </p>
+            <p class="shoppingText">Shopping list:</p>
+            <ul id="shoppingList"></ul>
+            <p>
+                <label for="item">I want to remove item number </label>
+                <input type="number" min="1" step="1" id="remove">
+                <button type="button"onclick="removeItem()">Remove!</button>
+            </p>
+        </div>
+    </div>
+    <hr>
     <script src="script.js"></script>
 </body>
 </html>

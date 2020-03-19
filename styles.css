@@ -49,3 +49,16 @@ hr {
 .bgimg {
     background-color: white;
 }
+
+.shoppingText {
+    margin-bottom: 0;
+}
+
+.option {
+    margin: 0;
+    margin-left: 20px;
+}
+
+#shoppingList {
+    margin-top: 0;
+}

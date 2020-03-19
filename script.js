@@ -39,3 +39,29 @@ function init() {
     };
     document.getElementById("dom6").addEventListener("mouseover", changeSrc);
 }
+
+function addItem() {
+    let item = document.getElementById("item").value;
+    if (item) {
+        let li = document.createElement("li");
+        li.appendChild(document.createTextNode(item));
+        if (document.getElementById("important").checked) {
+            li.style["color"] = "red";
+        }
+        if (document.getElementById("groceries").checked) {
+            li.style["textDecoration"] = "underline";
+        }
+        document.getElementById("shoppingList").appendChild(li);
+    }
+}
+
+function removeItem() {
+    let remove = document.getElementById("remove").value;
+    if (remove) {
+        let items = document.getElementById("shoppingList").getElementsByTagName("li");
+        remove--;
+        if (remove < items.length) {
+            items[remove].remove();
+        }
+    }
+}
