@@ -15,4 +15,10 @@ function init() {
     dom4image.src = "images/flower1.png";
     dom4image.classList = "bgimg";
     document.getElementById("dom4").appendChild(dom4image);
+
+    let dom5main = document.getElementById("dom5").getElementsByTagName("span");
+    let dom5colors = ["red", "orange", "yellow", "green", "blue", "purple", "pink"];
+    for (var i = dom5main.length - 1; i >= 0; i--) {
+        dom5main[i].style.color = dom5colors[i];
+    }
 }
