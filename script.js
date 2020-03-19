@@ -10,4 +10,9 @@ function init() {
     dom2images[3].src = "images/flower2.png";
 
     document.getElementById("dom3").innerHTML = "<p>Your are great!</p>";
+
+    let dom4image = document.createElement("img");
+    dom4image.src = "images/flower1.png";
+    dom4image.classList = "bgimg";
+    document.getElementById("dom4").appendChild(dom4image);
 }
