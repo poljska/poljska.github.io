@@ -1,3 +1,5 @@
+"use strict";
+
 function greet() {
     window.alert("Hey!");
 }
@@ -21,4 +23,19 @@ function init() {
     for (var i = dom5main.length - 1; i >= 0; i--) {
         dom5main[i].style.color = dom5colors[i];
     }
+
+    var changeSrc = function(event) {
+        if (event.target.src) {
+            let filename = event.target.src.replace(/^.*[\\\/]/, '');
+            switch (filename) {
+                case "flower1.png":
+                    event.target.src = "images/flower2.png";
+                    break;
+                case "flower2.png":
+                    event.target.src = "images/flower1.png";
+                    break;
+            }
+        }
+    };
+    document.getElementById("dom6").addEventListener("mouseover", changeSrc);
 }
