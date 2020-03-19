@@ -45,3 +45,7 @@ hr {
 .greet:hover {
     background-color: #99c24d;
 }
+
+.bgimg {
+    background-color: white;
+}
