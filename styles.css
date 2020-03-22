@@ -79,3 +79,46 @@ a, a:visited, a:hover {
 .redP {
     color: #f22913;
 }
+
+nav {
+    position: relative;
+}
+
+#menu {
+    position: absolute;
+    right: 0;
+    list-style: none;
+}
+
+#menu li {
+    display: inline-block;
+    padding: 0px 15px;
+    font-size: 1.4em;
+}
+
+#menu li a{
+    position: relative;
+    text-decoration: none;
+}
+
+#menu li a:after{
+    position: absolute;
+    right: 0;
+    display: block;
+    width: 0;
+    height: 2px;
+    content: '';
+    margin-top: 5px;
+    background: #048ba8;
+    transition: width .2s ease;
+}
+
+#menu li a:hover:after{
+    width: 100%;
+    left: 0;
+    background: #048ba8;
+}
+
+.current, .current:visited, .current:hover {
+    color: #f22913;
+}
