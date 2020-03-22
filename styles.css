@@ -122,3 +122,7 @@ nav {
 .current, .current:visited, .current:hover {
     color: #f22913;
 }
+
+p {
+    text-align: justify;
+}
