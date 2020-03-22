@@ -57,7 +57,7 @@ function addItem() {
 
 function removeItem() {
     let remove = document.getElementById("remove").value;
-    if (remove) {
+    if (remove && remove > 0) {
         let items = document.getElementById("shoppingList").getElementsByTagName("li");
         remove--;
         if (remove < items.length) {
