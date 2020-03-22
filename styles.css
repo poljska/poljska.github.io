@@ -5,7 +5,7 @@ body {
     color: #99c24d;
 }
 
-h1 {
+h1, h2 {
     color: #f18f01;
 }
 
@@ -61,4 +61,21 @@ hr {
 
 #shoppingList {
     margin-top: 0;
+}
+
+#xkcdBox {
+    text-align: center;
+}
+
+#xkcdBox > p {
+    margin-top: 0;
+}
+
+a, a:visited, a:hover {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.redP {
+    color: #f22913;
 }
